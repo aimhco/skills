@@ -56,6 +56,18 @@ It includes:
 
 Use this file when you are sitting down with a specific idea and need to decide whether to continue, archive, or run the next test.
 
+### `aimh-video/SKILL.md`
+
+A companion **installable agent skill** (with frontmatter, unlike the reference
+files above). It helps you spot a film-worthy moment while building or deciding,
+and shapes it into a 3-5 minute YouTube video about your thinking — covering when
+to film, the five-beat narrative arc, hook formulas, b-roll suggestions, and a
+five-slide pitch-deck outline.
+
+Drop the `aimh-video/` folder into an assistant's skills directory (e.g.
+`~/.claude/skills/`) so it auto-surfaces during build/decision sessions, or read
+it directly when planning a video. It pairs with `Decision_Skills_Latest.md`.
+
 ## Recommended Use
 
 Start with `decision_skills_runbook.md` for a specific idea. Keep `decision_skills_reference.md` nearby as the quick framework summary. Use `Decision_Skills_Latest.md` when you need the full operating manual or want to configure an AI assistant to follow the process.
