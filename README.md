@@ -1,12 +1,12 @@
 # Skills
 
-This repository contains a small set of decision-making skills for evaluating ideas before building them. They are written as Markdown reference files that can be used directly by a person or loaded into an AI coding assistant as operating instructions.
+This repository contains a set of decision-making and workflow skills for evaluating ideas, building things, and shipping work with an AI coding assistant. Most are **installable agent skills** (Markdown files with YAML frontmatter) that can be dropped into an assistant's skills directory (e.g. `~/.claude/skills/`) so they auto-surface at the right moment.
 
-The shared principle across all three files is simple: the default is not to build. An idea should earn more effort by passing a cheap, explicit test with clear continuation criteria.
+The shared principle behind the decision-making skills: the default is not to build. An idea earns more effort by passing a cheap, explicit test with clear continuation criteria.
 
 ## Files
 
-### `Decision_Skills_Latest.md`
+### `decision_skills.md`
 
 The complete decision-skill guide for AI-Made-Human experiments and related work. It defines the full workflow for evaluating ideas, MVPs, hackathon concepts, corporate security experiments, product workflows, and career moves.
 
@@ -24,50 +24,28 @@ It covers:
 - verdicts and artifacts
 - tracking, analytics, Linear setup, and prompt templates
 
-Use this file when you want the full framework and detailed guidance.
+This is a standalone reference doc (no frontmatter) - read it directly, or use it to configure an AI assistant's operating instructions for idea evaluation and build decisions.
 
-### `decision_skills_reference.md`
+### `video-moment-detector/SKILL.md`
 
-A compact reference version of the decision framework. It summarizes the six core parts of the system:
+An installable agent skill that scouts for video-worthy moments in your actual work - decisions, tradeoffs, mistakes, surprises, before/afters, and useful workflows. It inspects session context, git diffs, commit history, and work logs, then recommends one concrete video to record next, complete with hook, format, script outline, and title options. Includes Idea Depot-specific prompts and an optional session wrap-up format. Companion to `decision_skills.md`.
 
-- the diff
-- the risky assumption
-- the cheapest test
-- the kill criteria
-- the verdict
-- the artifact
+### `idea-intel-funnel/SKILL.md`
 
-It also shows how the framework applies to AIMH MVPs, hackathon pitches, corporate experiments, and career decisions.
+An installable agent skill that acts as a junior chief of staff over a solo builder's idea pipeline (Idea Depot). Reads idea data, establishes today's decision context (mode, energy, strategic priority), builds a NOW/NEXT/LATER/PARKING LOT roadmap snapshot, and recommends one focused action for the day - with reasoning, alternatives considered, and a structured disagreement loop so the user can push back and get a re-ranked recommendation.
 
-Use this file when you need a quick reminder of the framework without the full detailed playbook.
+### `peer-review/SKILL.md`
 
-### `decision_skills_runbook.md`
+An installable agent skill providing two-phase autonomous QA for build tasks. Phase 1 (Builder) closes the loop before handing back control: write tests, run them, smoke-test the happy path, and write `RESULTS.md`. Phase 2 (Critic) switches roles to review the diff for logic errors, edge cases, security issues, and gaps versus stated intent, producing a severity-tagged `REVIEW.md` with a SHIP / SHIP WITH CONDITIONS / DO NOT SHIP verdict. Use on every non-trivial feature, bug fix, or refactor.
 
-A step-by-step runbook for processing one new idea in about 45-60 minutes. It turns the framework into a practical checklist, from capturing the idea through shipping an artifact.
+### `grill-me/SKILL.md`
 
-It includes:
+An installable agent skill for relentless, one-question-at-a-time interrogation of any topic, plan, or position. Leads each question with its own take, resolves each thread before moving on, and tracks open threads until reaching genuine shared understanding. Use when you want a position, plan, or design stress-tested - or whenever you say "grill me".
 
-- timed steps for evaluating a new idea
-- rules for stopping when the idea is still unclear
-- guidance for writing the 3-minute pitch
-- cheapest-test and kill-criteria prompts
-- a reusable idea-note template
-- suggested locations for active and archived idea notes
+### `save-decision-Obsidian/SKILL.md`
 
-Use this file when you are sitting down with a specific idea and need to decide whether to continue, archive, or run the next test.
-
-### `aimh-video/SKILL.md`
-
-A companion **installable agent skill** (with frontmatter, unlike the reference
-files above). It helps you spot a film-worthy moment while building or deciding,
-and shapes it into a 3-5 minute YouTube video about your thinking — covering when
-to film, the five-beat narrative arc, hook formulas, b-roll suggestions, and a
-five-slide pitch-deck outline.
-
-Drop the `aimh-video/` folder into an assistant's skills directory (e.g.
-`~/.claude/skills/`) so it auto-surfaces during build/decision sessions, or read
-it directly when planning a video. It pairs with `Decision_Skills_Latest.md`.
+A user-invocable agent skill that extracts the key decision(s) from the current conversation and saves them as structured notes to an Obsidian vault (`~/brain/decisions/`), with tags and a one-line index entry appended to `~/brain/index.md`. Uses the Obsidian MCP server to write the files without confirmation.
 
 ## Recommended Use
 
-Start with `decision_skills_runbook.md` for a specific idea. Keep `decision_skills_reference.md` nearby as the quick framework summary. Use `Decision_Skills_Latest.md` when you need the full operating manual or want to configure an AI assistant to follow the process.
+Start with `decision_skills.md` for the full operating manual when evaluating or planning an idea. Drop the skill folders (`video-moment-detector/`, `idea-intel-funnel/`, `peer-review/`, `grill-me/`, `save-decision-Obsidian/`) into your assistant's skills directory (e.g. `~/.claude/skills/`) so they activate automatically at the right moments during build, review, and decision sessions.

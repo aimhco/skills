@@ -63,7 +63,7 @@ Do not skip straight from idea to prototype.
 
 ---
 
-## Step 1 — Capture the Idea
+## Step 1 - Capture the Idea
 
 Write one sentence only.
 
@@ -79,7 +79,7 @@ If the idea cannot be explained in one sentence, it is still a topic, not an ide
 
 ---
 
-## Step 2 — Write the Diff
+## Step 2 - Write the Diff
 
 Write the before and after state.
 
@@ -101,7 +101,7 @@ If the before/after is vague, stop and narrow the idea.
 
 ---
 
-## Step 3 — Name the User
+## Step 3 - Name the User
 
 Use a real person or tiny segment.
 
@@ -123,7 +123,7 @@ The smaller the user, the clearer the MVP.
 
 ---
 
-## Step 4 — Write the Mini Pitch Before Building
+## Step 4 - Write the Mini Pitch Before Building
 
 Write a plain-text 3-minute pitch before touching code.
 
@@ -141,7 +141,7 @@ If the pitch does not fit in 3 minutes, the scope is too large. Cut scope; do no
 
 ---
 
-## Step 5 — Identify the Riskiest Assumption
+## Step 5 - Identify the Riskiest Assumption
 
 List 3-5 assumptions that must be true.
 
@@ -165,7 +165,7 @@ Usually it is:
 
 ---
 
-## Step 6 — Design the Cheapest Test
+## Step 6 - Design the Cheapest Test
 
 The cheapest test is the smallest action that changes confidence in the riskiest assumption.
 
@@ -191,7 +191,7 @@ Rules:
 
 ---
 
-## Step 7 — Write Kill Criteria Before Testing
+## Step 7 - Write Kill Criteria Before Testing
 
 Write one clear continuation rule.
 
@@ -226,7 +226,7 @@ No criteria means the idea will drift forever.
 
 ---
 
-## Step 8 — Build Only the Tiny MVP
+## Step 8 - Build Only the Tiny MVP
 
 Only build after cheap tests earn it.
 
@@ -279,12 +279,12 @@ For YouTube, do not only present the final pitch deck.
 
 Use this structure:
 
-1. **Idea** — what human problem triggered the experiment?
-2. **Questions** — what pitch questions exposed the real scope?
-3. **Tiny test/MVP** — what was built or tested?
-4. **3-minute pitch** — what is the clearest version now?
-5. **Reflection** — what was wrong, surprising, or worth continuing?
-6. **Verdict** — continue or archive
+1. **Idea** - what human problem triggered the experiment?
+2. **Questions** - what pitch questions exposed the real scope?
+3. **Tiny test/MVP** - what was built or tested?
+4. **3-minute pitch** - what is the clearest version now?
+5. **Reflection** - what was wrong, surprising, or worth continuing?
+6. **Verdict** - continue or archive
 
 The thinking process is part of the product.
 
