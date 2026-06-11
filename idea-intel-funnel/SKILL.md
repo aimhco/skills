@@ -194,15 +194,17 @@ NOTES
 -
 ```
 
-## Step 8: Save the output
+## Step 8: Show on screen, then save
 
-Save the full output to a dated file. Get the date with `date +%F`.
+Always print the complete output block (the full Step 7 structure) on screen first. Do not replace it with a summary. The user wants to read the whole thing in the conversation.
+
+Then also save the same full output to a dated file. Get the date with `date +%F`.
 
 ```text
 /Users/dennywii/Documents/MD Files Output/idea-intel-YYYY-MM-DD.md
 ```
 
-For example, `idea-intel-2026-06-10.md`. If a file for today already exists, overwrite it with the latest version. Confirm to the user where it was saved.
+For example, `idea-intel-2026-06-10.md`. If a file for today already exists, overwrite it with the latest version. After the full output, add one short line confirming where it was saved. The saved file is a copy, not a replacement for showing the output.
 
 ## Step 9: Disagreement loop
 
