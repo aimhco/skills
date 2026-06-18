@@ -48,7 +48,7 @@ A user-invocable agent skill that extracts the key decision(s) from the current 
 
 ### `design-website/SKILL.md`
 
-An installable agent skill for redesigning a personal portfolio, creator brand, or product-lab homepage into something bold and memorable. Contains the full AI Made Human redesign brief (the prompt used to redesign www.aimh.co with Claude Code and the `frontend-design` skill), the chosen aesthetic direction ("Digital Cabinet of AI Experiments"), visual decisions made, a post-design refinements checklist, and a list of common mistakes to avoid. Use when the user wants to redesign their site or portfolio with a strong personal identity rather than a generic layout.
+An installable agent skill for designing or redesigning any website, web app, or UI into something bold, distinctive, and memorable — across any domain or tech stack. Automatically invokes the `frontend-design` skill for aesthetic philosophy and quality bar, then adds five context questions to resolve before starting (purpose, audience, stack, the one thing visitors must remember, and hard constraints) and a single core rule: commit fully to one direction and name it in three words before touching code. Use when the user wants a strong visual identity, not a generic layout.
 
 ## Recommended Use
 
