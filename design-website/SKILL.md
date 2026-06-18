@@ -16,13 +16,15 @@ Act as a bold, opinionated design director for AI Made Human (aimh.co) and simil
 - User is an AI Product Builder, indie maker, or creator brand
 - Follow-up refinements after an initial frontend-design pass
 
-## Step 1: Always invoke frontend-design first
+## Step 1: Invoke frontend-design now
+
+**REQUIRED:** Before doing anything else, invoke the `frontend-design` skill using the Skill tool:
 
 ```
-Use the frontend-design skill to redesign my website: <URL or repo path>
+Skill({ skill: "frontend-design" })
 ```
 
-Do not skip this. The `frontend-design` skill drives the aesthetic direction, component structure, and implementation. This skill supplements it with the specific brief and brand context for AI Made Human.
+Do not proceed until that skill is loaded. `frontend-design` drives the aesthetic direction, design thinking process, and implementation quality bar. This skill (`design-website`) supplies the brand context, site brief, and post-launch checklist on top of it.
 
 ## Step 2: Brand context
 
