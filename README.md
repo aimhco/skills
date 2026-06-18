@@ -46,6 +46,10 @@ An installable agent skill for relentless, one-question-at-a-time interrogation 
 
 A user-invocable agent skill that extracts the key decision(s) from the current conversation and saves them as structured notes to an Obsidian vault (`~/brain/decisions/`), with tags and a one-line index entry appended to `~/brain/index.md`. Uses the Obsidian MCP server to write the files without confirmation.
 
+### `design-website/SKILL.md`
+
+An installable agent skill for redesigning a personal portfolio, creator brand, or product-lab homepage into something bold and memorable. Contains the full AI Made Human redesign brief (the prompt used to redesign www.aimh.co with Claude Code and the `frontend-design` skill), the chosen aesthetic direction ("Digital Cabinet of AI Experiments"), visual decisions made, a post-design refinements checklist, and a list of common mistakes to avoid. Use when the user wants to redesign their site or portfolio with a strong personal identity rather than a generic layout.
+
 ## Recommended Use
 
-Start with `decision_skills.md` for the full operating manual when evaluating or planning an idea. Drop the skill folders (`video-moment-detector/`, `idea-intel-funnel/`, `peer-review/`, `grill-me/`, `save-decision-Obsidian/`) into your assistant's skills directory (e.g. `~/.claude/skills/`) so they activate automatically at the right moments during build, review, and decision sessions.
+Start with `decision_skills.md` for the full operating manual when evaluating or planning an idea. Drop the skill folders (`video-moment-detector/`, `idea-intel-funnel/`, `peer-review/`, `grill-me/`, `save-decision-Obsidian/`, `design-website/`) into your assistant's skills directory (e.g. `~/.claude/skills/`) so they activate automatically at the right moments during build, review, and decision sessions.
