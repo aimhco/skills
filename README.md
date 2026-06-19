@@ -50,6 +50,10 @@ A user-invocable agent skill that extracts the key decision(s) from the current 
 
 An installable agent skill for designing or redesigning any website, web app, or UI into something bold, distinctive, and memorable — across any domain or tech stack. Automatically invokes the `frontend-design` skill for aesthetic philosophy and quality bar, then adds five context questions to resolve before starting (purpose, audience, stack, the one thing visitors must remember, and hard constraints) and a single core rule: commit fully to one direction and name it in three words before touching code. Use when the user wants a strong visual identity, not a generic layout.
 
+### `make-video/SKILL.md`
+
+An installable agent skill and the companion to the [aimh-video-engine](https://github.com/aimhco/aimh-video-engine) project. Turns a rough Tella screen recording (plus its `.srt` subtitles) into a finished, re-voiced video: it rewrites the rambling transcript into a clean, chunked script, synthesizes it in the user's cloned ElevenLabs voice, and re-times the screen footage to the narration. Use from inside the `aimh-video-engine` repo when the user says "make a video" or points at a recording in `videos/<slug>/`.
+
 ## Recommended Use
 
-Start with `decision_skills.md` for the full operating manual when evaluating or planning an idea. Drop the skill folders (`video-moment-detector/`, `idea-intel-funnel/`, `peer-review/`, `grill-me/`, `save-decision-Obsidian/`, `design-website/`) into your assistant's skills directory (e.g. `~/.claude/skills/`) so they activate automatically at the right moments during build, review, and decision sessions.
+Start with `decision_skills.md` for the full operating manual when evaluating or planning an idea. Drop the skill folders (`video-moment-detector/`, `idea-intel-funnel/`, `peer-review/`, `grill-me/`, `save-decision-Obsidian/`, `design-website/`, `make-video/`) into your assistant's skills directory (e.g. `~/.claude/skills/`) so they activate automatically at the right moments during build, review, and decision sessions.
