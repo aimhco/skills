@@ -52,7 +52,7 @@ An installable agent skill for designing or redesigning any website, web app, or
 
 ### `make-video/SKILL.md`
 
-An installable agent skill and the companion to the [aimh-video-engine](https://github.com/aimhco/aimh-video-engine) project. Turns a rough Tella screen recording (plus its `.srt` subtitles) into a finished, re-voiced video: it rewrites the rambling transcript into a clean, chunked script, synthesizes it in the user's cloned ElevenLabs voice, and re-times the screen footage to the narration. It can also add steady per-chunk **auto-zoom** via the Tella MCP — declarative `zoom` cues in `script.json` become `manualZoom`s applied on the original recording before re-timing. Use from inside the `aimh-video-engine` repo when the user says "make a video" or points at a recording in `videos/<slug>/`.
+An installable agent skill and the companion to the [aimh-video-engine](https://github.com/aimhco/aimh-video-engine) project. Turns a rough Tella screen recording (plus its `.srt` subtitles) into a finished, re-voiced video: it rewrites the rambling transcript into a clean, chunked script, synthesizes it in the user's cloned ElevenLabs voice, and re-times the screen footage to the narration. It can also add steady per-chunk **auto-zoom** via the Tella MCP — declarative `zoom` cues in `script.json` become `manualZoom`s applied on the original recording before re-timing — and burns in **captions** generated from the script and voice timing. Use from inside the `aimh-video-engine` repo when the user says "make a video" or points at a recording in `videos/<slug>/`.
 
 ## Recommended Use
 
