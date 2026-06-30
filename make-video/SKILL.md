@@ -36,11 +36,11 @@ The user should be able to ask for "make video `<slug>`" and then respond at rev
 
 3. **Get the user's approval of the script** (✋ checkpoint) — this is *before* any ElevenLabs spend.
 
-4. **Run the pipeline:** `bun run make-video <slug>`. Long-form content does not have burned-in captions by default. Use `--captions` only when the user explicitly wants captions, such as for Shorts or other short-form variants. The pipeline synthesizes each chunk (cached in `videos/<slug>/vo/`), plans the segments (printing a speed/pad table), and assembles `videos/<slug>/final.mp4`.
+4. **Run the pipeline:** `bun run make-video <slug>`. Long-form content does not have burned-in captions by default. Use `--captions` only when the user explicitly wants captions, such as for Shorts or other short-form variants. The pipeline synthesizes each chunk (cached in `videos/<slug>/vo/`), plans the segments (printing a speed/pad table), assembles `videos/<slug>/final.mp4`, writes `videos/<slug>/adjustments.json`, and prints an adjustments table.
 
 5. **QA the output:** `bun run qa <slug>` validates `final.mp4` (duration, 1080p, audio not silent, and captions only if `captions.srt` exists) and exits nonzero if any check fails. It also prints **advisory, non-blocking** OCR-based secret-leak warnings (review them — OCR can be wrong); `--no-secrets` skips that pass.
 
-6. **Review `final.mp4` with the user** (✋ checkpoint). To iterate, edit `script.json` and re-run.
+6. **Review `final.mp4` with the user** (✋ checkpoint). Surface the adjustments summary from `adjustments.json` before asking for review: voiceover chunk count/total duration, captions on/off, chapter card timestamps, zoom/highlight/blur counts or "not applicable — no Tella project", music tracks, logo, intro/outro, final duration, and final resolution. To iterate, edit `script.json` and re-run.
    - ⚠️ The voice cache is keyed by chunk `id`. If you change a chunk's **text**, delete its `videos/<slug>/vo/<id>.mp3` (or the whole `vo/` dir) to force re-synthesis.
 
 7. **Run the retro loop after review/publish.** Use `bun run retro <slug>` to create `videos/<slug>/retro.json` if needed. Add only durable lessons that should apply to future videos, then run `bun run retro <slug> --apply` to merge approved rules into `house-style.md`. The merge is idempotent and skips duplicate rules.
